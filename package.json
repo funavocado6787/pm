@@ -1,0 +1,41 @@
+{
+  "name": "pm-keeper",
+  "version": "1.1.12",
+  "description": "package version keeper",
+  "author": "liwuhou <hugewilliam@foxmail.com>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "homepage": "https://github.com/liwuhou/pm-keeper#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liwuhou/pm-keeper"
+  },
+  "bugs": "https://github.com/liwuhou/pm-keeper/issues",
+  "files": [
+    "dist",
+    "bin"
+  ],
+  "bin": "bin/index.js",
+  "scripts": {
+    "dev": "npm run build -- --watch",
+    "prebuild": "rimraf dist",
+    "build": "tsup src --format iife --minify"
+  },
+  "keywords": [
+    "npm",
+    "yarn",
+    "pnpm"
+  ],
+  "devDependencies": {
+    "@types/node": "^17.0.0",
+    "eslint": "^8.4.1",
+    "esno": "^0.13.0",
+    "esup": "^0.0.0",
+    "rimraf": "^3.0.2",
+    "tsup": "^5.11.6",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "boxen": "^6.2.1"
+  }
+}
